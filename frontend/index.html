@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taco Taco - Tiny Fight Game</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #2c3e50;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Courier New', monospace;
+        }
+        #game-container {
+            border: 3px solid #34495e;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        }
+        .controls {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: white;
+            background: rgba(0,0,0,0.7);
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.70.0/dist/phaser.min.js"></script>
+</head>
+<body>
+    <div class="controls">
+        <h3>Controls:</h3>
+        <p>Space - Jump</p>
+        <p>A - Backward/Block</p>
+        <p>D - Forward</p>
+        <p>Left Mouse Button - Melee Attack</p>
+        <p>Right Mouse Button - Ranged Attack</p>
+    </div>
+    <div id="game-container"></div>
+    <script type="module" src="src/main.js"></script>
+</body>
+</html> 
