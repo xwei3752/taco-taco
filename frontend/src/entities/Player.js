@@ -152,12 +152,14 @@ export class Player extends Phaser.Physics.Arcade.Sprite {
         }
         
         // 创建近战攻击效果
-        const attackRange = 60;
+        const attackRange = 40;
         const attackX = this.x + (this.facingDirection * attackRange);
         const attackY = this.y - 20;
         
         // 创建攻击碰撞箱
-        const attackBox = this.scene.add.rectangle(attackX, attackY, 40, 40, 0xff0000, 0.5);
+        const attackBox = this.scene.add.image(attackX, attackY, 'coke');
+        attackBox.setDisplaySize(80, 80); // 根据需要调整攻击范围大小
+        attackBox.setAlpha(0.8);
         this.scene.physics.add.existing(attackBox);
         
         // 检测攻击碰撞

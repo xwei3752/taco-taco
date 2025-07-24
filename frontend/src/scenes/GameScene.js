@@ -26,6 +26,8 @@ export default class GameScene extends Phaser.Scene {
         // 加载玩家行走动画 sprite sheet
         this.load.spritesheet('player_walk', 'assets/walking.png', { frameWidth: 180, frameHeight: 180 });
         this.load.image('taco', 'assets/taco.png');
+        this.load.image('coke', 'assets/coke.png');
+
 
 
     }
